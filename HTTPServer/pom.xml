@@ -3,7 +3,18 @@
   <groupId>com.ZookeeperFileSystem</groupId>
   <artifactId>HTTPServer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <release>13</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <!--  Dependencies -->
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
